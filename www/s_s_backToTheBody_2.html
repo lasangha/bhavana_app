@@ -23,68 +23,70 @@
 <script src="js/fortoday.js"></script>
 <script src="js/bhavana.js"></script>
 
-<title>De Vuelta al cuerpo</title>
+<title>De vuelta al cuerpo</title>
 </head>
 <!-- end of head -->
 
 
 <body>
 
-<div data-role="page" id="backToTheBody">
+<div data-role="page" id="backToTheBody_1">
 	<header data-role="header">
 		
 		<a href="index.html" data-iconpos="notext" data-icon="home">Inicio</a>
 		
-			<h1>Bhavana | De Vuelta al cuerpo</h1>
-		</header>
+		<h1>Bhavana | De vuelta al cuerpo</h1>
+	</header>
 
-	<form action="#">
-		<select id="cause">
-			<option value="0">Voy a meditar por...</option>
-			<option value="paz">La Paz</option>
-			<option value="com">Compasión</option>
-			<option value="hum">Humildad</option>
-		</select>
-	</form>
 
 	<div align="center" style="padding: 10px">
-		<div class="ui-corner-all custom-corners">
-			<div class="ui-bar ui-bar-a">
-					<h3>Sesión 1</h3>
-<p>
-Iniciamos con 3 minutos para la mente
-</p>
+		<h3 class="ui-bar ui-bar-a ui-corner-all">De vuelta al cuerpo</h3>
+		<div class="ui-body ui-body-a ui-corner-all">
+				<h1>Sesión 3</h1>
+<p>Unos minutos más para que a mente esté en paz...</p>
 
-			</div>
-			<div class="ui-body ui-body-a">
+		</div>
+
+		<div class="ui-corner-all custom-corners">
+
+			<form action="#">
+				<select id="cause" onChange="hidePlayer()">
+					<option value="0">Seleccione su intención para empezar la sesión...</option>
+					<option value="paz">La Paz</option>
+					<option value="com">Compasión</option>
+					<option value="hum">Humildad</option>
+				</select>
+			</form>
+
+			<div class="ui-body ui-body-a" id="myPlayer">
 				<p>
 				<audio controls id="meditation">
-				<source src="audio/meditations/backToTheBody.mp3" type="audio/mpeg">
-				Your browser does not support the audio tag.
-			</audio>
-			</p>
+					<source src="audio/meditations/backToTheBody_1.mp3" type="audio/mpeg">
+					Your browser does not support the audio tag.
+				</audio>
+				</p>
+			</div>
 		</div>
+
 	</div>
 
-</div>
+	<div data-role="navigator">
+		<nav data-role="navbar">
+			<ul>
+				
+				<li>
+				<a href="s_s_backToTheBody_1.html" data-ajax="false" onClick="return stopPlayer();" data-transition="slidedown" data-icon="arrow-l">Volver</a>
+				<li>
+				
 
-<div data-role="navigator">
-	<nav data-role="navbar">
-		<ul>
-			
-			<li>
-			<a href="index.html" onClick="return stopPlayer();" data-transition="slidedown" data-icon="arrow-l">Volver</a>
-			<li>
-			
+				
+				<a href="s_s_backToTheMoment.html"  data-ajax="false" onClick="return stopPlayer();" data-transition="slidedown" data-icon="arrow-r">Siguiente</a>
+				
+			</ul>
+		</nav>
+	</div>
 
-			
-			<a href="s_backToTheBody_1.html" onClick="return stopPlayer();" data-transition="slidedown" data-icon="arrow-r">Siguiente</a>
-			
-		</ul>
-	</nav>
-</div>
-
-<footer data-role="footer" data-position="fixed">
+	<footer data-role="footer" data-position="fixed">
 	<nav data-role="navbar">
 		<ul>
 			<li><a href="index.html" data-icon="home">Inicio</a></li>
@@ -104,6 +106,13 @@ Iniciamos con 3 minutos para la mente
 
 
 </div><!-- end main div-->
+<script>
+
+$(document).ready(function($){
+		console.log("Hiding the player");
+		hidePlayer();
+		});
+</script>
 
 </body>
 
