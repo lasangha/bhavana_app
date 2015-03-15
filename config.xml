@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Hello World</name>
+    <name>Bhavana</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Aprenda a meditar
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="lasanghacr@yahoo.com" href="http://lasangha.org">
+        La Sangha
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
@@ -69,5 +69,5 @@
 
 	<plugin name="Storage" value="org.apache.cordova.Storage" />
 
-	<access origin="http://192.168.43.164/index2.html" />
+	<access origin="*" />
 </widget>
