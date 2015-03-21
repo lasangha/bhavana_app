@@ -8,6 +8,9 @@
     <feature name="Media">
         <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
     <name>Bhavana</name>
     <description>
         Aprenda a meditar
@@ -74,6 +77,5 @@
     <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
-    <plugin name="Storage" value="org.apache.cordova.Storage" />
-    <access origin="*" />
+    <access origin="http://192.168.43.164*" />
 </widget>

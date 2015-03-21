@@ -10,5 +10,11 @@
             "type": "registry",
             "id": "org.apache.cordova.file"
         }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
     }
 }
